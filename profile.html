@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="profile">
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="index.html">NEWS LETTER</a>
+      <nav>
+        <a id="dashboardLink" href="index.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <button class="text-button logout" type="button">Log out</button>
+      </nav>
+    </header>
+
+    <section class="profile-card">
+      <h1>Profile settings</h1>
+      <p class="muted">Update your email or password.</p>
+
+      <form id="profileForm">
+        <label for="profileName">Name</label>
+        <input id="profileName">
+
+        <label for="profileEmail">Email</label>
+        <input id="profileEmail" type="email" required>
+
+        <label for="profilePassword">New password</label>
+        <input id="profilePassword" type="password" minlength="6"
+               placeholder="Leave blank to keep your current password">
+
+        <button class="button" type="submit">Save changes</button>
+      </form>
+
+      <p id="profileMessage" class="message" hidden></p>
+    </section>
+  </main>
+</body>
+</html>

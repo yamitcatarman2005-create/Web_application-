@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="admin">
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="admin.html">NEWS LETTER</a>
+      <nav>
+        <a href="admin.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <button class="text-button logout" type="button">Log out</button>
+      </nav>
+    </header>
+
+    <section class="dashboard">
+      <div class="dashboard-heading">
+        <div>
+          <h1>Admin dashboard</h1>
+          <p class="muted">Create announcements for clients.</p>
+        </div>
+        <span class="role-badge">ADMIN</span>
+      </div>
+
+      <div class="columns">
+        <section class="panel">
+          <h2>Create a message</h2>
+          <form id="announcementForm">
+            <label for="messageTitle">Title</label>
+            <input id="messageTitle" required maxlength="100">
+
+            <label for="messageBody">Message</label>
+            <textarea id="messageBody" required maxlength="2000"></textarea>
+
+            <button class="button" type="submit">Publish message</button>
+          </form>
+          <p id="adminMessage" class="message" hidden></p>
+        </section>
+
+        <section class="panel">
+          <h2>Published announcements</h2>
+          <div id="announcementList"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="client">
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="client.html">NEWS LETTER</a>
+      <nav>
+        <a href="client.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <button class="text-button logout" type="button">Log out</button>
+      </nav>
+    </header>
+
+    <section class="dashboard">
+      <div class="dashboard-heading">
+        <div>
+          <h1>Client dashboard</h1>
+          <p class="muted">Announcements from the administrator.</p>
+        </div>
+        <span class="role-badge">CLIENT</span>
+      </div>
+
+      <section class="panel">
+        <h2>Announcements</h2>
+        <div id="announcementList"></div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
